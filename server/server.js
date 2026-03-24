@@ -18,7 +18,7 @@ app.get('/movies', function (req, res) {
       "Writers": ["Makoto Shinkai"],
       "Actors": ["Nanoka Hara", "Hokuto Matsumura", "Eri Fukatsu"],
       "Plot": "A modern action adventure road story where a 17-year-old girl named Suzume helps a mysterious young man close doors from the other side that are releasing disasters all over in Japan.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BODhkNDhmNzktODFmMC00NDZiLWEzN2UtY2YwYzgzYTVlMWZmXkEyXkFqcGc@._V1_SX300.jpg",
+      "Poster": "https://i.etsystatic.com/41806432/r/il/380bcb/5263845797/il_fullxfull.5263845797_45wo.jpg",
       "Metascore": 77,
       "imdbRating": 7.6
     },
@@ -31,7 +31,7 @@ app.get('/movies', function (req, res) {
       "Writers": ["Makoto Shinkai"],
       "Actors": ["Ryûnosuke Kamiki", "Mone Kamishiraishi", "Ryo Narita"],
       "Plot": "Two teenagers share a profound, magical connection upon discovering they are swapping bodies. Things manage to become even more complicated when the boy and girl decide to meet in person.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMjI1ODZkYTgtYTY3Yy00ZTJkLWFkOTgtZDUyYWM4MzQwNjk0XkEyXkFqcGc@._V1_SX300.jpg",
+      "Poster": "https://i.imgur.com/xNPlWgd.jpeg",
       "Metascore": 81,
       "imdbRating": 8.4
     },
@@ -44,7 +44,7 @@ app.get('/movies', function (req, res) {
       "Writers": ["Makoto Shinkai"],
       "Actors": ["Kenji Mizuhashi", "Yoshimi Kondou", "Satomi Hanamura"],
       "Plot": "A coming-of-age story told in three segments, following Takaki Tōno and his changing relationships as time, distance, and unspoken feelings shape their lives.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BODVmZjhhYTYtYzRiOC00YzFiLThlZjMtZTQxNWY0MTI1MzlmXkEyXkFqcGc@._V1_SX300.jpg",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BODVmZjhhYTYtYzRiOC00YzFiLThlZjMtZTQxNWY0MTI1MzlmXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "Metascore": 78,
       "imdbRating": 7.5
     },
@@ -57,7 +57,7 @@ app.get('/movies', function (req, res) {
       "Writers": ["Makoto Shinkai"],
       "Actors": ["Kotaro Daigo", "Nana Mori", "Tsubasa Honda"],
       "Plot": "Set during a period of exceptionally rainy weather, high-school boy Hodaka Morishima runs away from his troubled rural home to Tokyo and befriends an orphan girl who can manipulate the weather.",
-      "Poster": "https://m.media-amazon.com/images/M/MV5BMmJiYWI4ZjktMzgyZS00MjBiLThmOTYtZWJmOTUzOTFkMTFiXkEyXkFqcGc@._V1_SX300.jpg",
+      "Poster": "https://m.media-amazon.com/images/M/MV5BMmJiYWI4ZjktMzgyZS00MjBiLThmOTYtZWJmOTUzOTFkMTFiXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
       "Metascore": 72,
       "imdbRating": 7.5
     }
