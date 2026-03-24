@@ -18,8 +18,70 @@
             xhr.onload = function () {
                 const bodyElement = document.querySelector("body")
                 if (xhr.status == 200) {
-		            /* Part 2: Build the HTML elements here and append them to the body */ 
-                    bodyElement.append(reverseString(xhr.responseText))
+                    /* Part 2: Build the HTML elements here and append them to the body */
+                    const movies = JSON.parse(xhr.responseText)
+                    movies.forEach(function (movie) {
+                        const movieArticle = document.createElement("article");
+                        const posterElement = document.createElement("img");
+                        const titleElement = document.createElement("h2");
+                        const infoElement = document.createElement("p");
+                        const plotElement = document.createElement("p");
+                        const directorHeader = document.createElement("h3");
+                        const directorList = document.createElement("ul");
+                        const writerHeader = document.createElement("h3");
+                        const writerList = document.createElement("ul");
+                        const actorHeader = document.createElement("h3");
+                        const actorList = document.createElement("ul");
+                        const ratingElement = document.createElement("p");
+
+
+                        movieArticle.append(posterElement);
+                        movieArticle.append(titleElement);
+                        movieArticle.append(infoElement);
+                        movieArticle.append(ratingElement);
+                        movie.Genres.forEach(function (genre) {
+                            const genreSpan = document.createElement("span");
+                            genreSpan.textContent = genre;
+                            genreSpan.className = "genre";
+                            movieArticle.append(genreSpan);
+                        })
+                        movieArticle.append(directorHeader);
+                        movie.Directors.forEach(function (director) {
+                            const li = document.createElement("li");
+                            li.textContent = director;
+                            directorList.append(li);
+                        })
+                        movieArticle.append(directorList);
+
+                        movieArticle.append(writerHeader);
+                        movie.Writers.forEach(function (writer) {
+                            const li = document.createElement("li");
+                            li.textContent = writer;
+                            writerList.append(li);
+                        })
+                        movieArticle.append(writerList);
+
+                        movieArticle.append(actorHeader);
+                        movie.Actors.forEach(function (actor) {
+                            const li = document.createElement("li");
+                            li.textContent = actor;
+                            actorList.append(li);
+                        })
+                        movieArticle.append(actorList);
+
+                        movieArticle.append(plotElement);
+
+
+                        posterElement.src = movie.Poster;
+                        infoElement.textContent = "• Runtime: " + movie.Runtime + "m • Released on " + movie.Released;
+                        titleElement.textContent = movie.Title;
+                        bodyElement.append(movieArticle);
+                        plotElement.textContent = movie.Plot;
+                        directorHeader.textContent = "Director";
+                        writerHeader.textContent = "Writer";
+                        actorHeader.textContent = "Actor";
+                        ratingElement.textContent = "IMDb: "+movie.imdbRating+" Metascore: "+ movie.Metascore;
+                    })
                 } else {
                     bodyElement.append("Daten konnten nicht geladen werden, Status " + xhr.status + " - " + xhr.statusText)
                 }
